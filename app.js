@@ -50,6 +50,44 @@ li2.appendChild(document.createTextNode('change diapers'));
 newLi.appendChild(li3);
 li3.appendChild(document.createTextNode('drive to work'));
 
+//how to remove something by hovering over it: 
+var removeDiv = document.getElementById("ghosting");
+removeDiv.onmouseover = function (){
+  removeDiv.remove();
+}
+
+//makes width bigger when you mouse over
+
+var resizeDiv = document.getElementById("resize");
+resizeDiv.onmouseover = function (){
+  resizeDiv.style.width = "400px" ;
+}
+
+//remove a class from an element
+//not working
+function myFunction() {
+  var element = document.getElementById("essentials");
+  element.classList.remove("selected");
+  var changeSrc = document.querySelector("img")
+  changeSrc.src = "panic.jpeg";
+
+}
+
+
+
+// Add the class of selected to an <li> when it is clicked. Remove it from any other lis as well.
+
+
+
+// Change the image to be the most recently clicked food item.
+
+// When the gray div is moused over, it's removed from the DOM.
+
+// When the orange div is moused over, its width doubles. When the mouse moves out of the div, it returns to its original size.
+
+// When the reset button is clicked - remove the selected class from each <li> and change the image to panic.jpeg.
+
+// When the 1, 2, 3, 4, 5, 6, 7, 8, 9, or 0 key is pressed, the page alerts the message "I HATE NUMBERZZZ!"
 
 
 
