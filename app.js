@@ -64,14 +64,28 @@ resizeDiv.onmouseover = function (){
 }
 
 //remove a class from an element
-//not working
+//change photo on click:
 function myFunction() {
   var element = document.getElementById("essentials");
   element.classList.remove("selected");
   var changeSrc = document.querySelector("img")
   changeSrc.src = "panic.jpeg";
-
 }
+
+//alert a message when any number key on the keyboard is pressed:
+window.onkeydown = function(event) {
+  if (event.keyCode = 0-9) {
+     alert("I HATE NUMBERZZZ!");
+  }
+};
+
+// const log = document.getElementById("keyEvent");
+// document.addEventListener('keypress', logKey);
+
+// function logKey (e) {
+//   log.textContent += `${e.code}`
+// }
+
 
 
 
